@@ -1,5 +1,51 @@
-$bgColor: rgb(130, 0, 182);
+@use 'hero';
+@use 'shows';
+@use 'variaveis';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+    @media (max-width: 768px) {
+        min-height: 100%;
+    }
+}
+
+@mixin text($fontSize: 15px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoSecundario;
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(13px);
+    }
+}
+
+.text--big {
+    @include text(20px);
+    color: variaveis.$corTextoPrincipal;
+
+    @media (max-width: 768px) {
+        @include text(15px);
+        color: variaveis.$corTextoPrincipal;
+    }
+}
+
+.text--small {
+    @include text(10px);
+    color: variaveis.$corTextoSecundario;
+
+    @media (max-width: 768px) {
+        @include text(10px);
+    }
 }

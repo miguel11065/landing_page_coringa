@@ -5,8 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Coringa</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>teste</h1>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./dist/images/coringo_logo.png" width="" alt="coringa">
+            </h1>
+                <p class="text--big">
+                    Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.
+                </p>
+                <div class="hero__content__badges text">
+                    <span class="hero__content__badges">IMDb 8,4</span>
+                    <span class="hero__content__badges">2h 1min</span>
+                    <span class="hero__content__badges">2019</span>
+                    <span class="hero__content__badges">
+                        <img src="./dist/images/rating.png" alt="Não recomendado para menores de 16 anos.">
+                    </span>
+                </div>
+                <div class="hero__content__generos text">
+                    <span class="hero__content__generos">Drama</span>
+                    <span class="hero__content__generos">•</span>
+                    <span class="hero__content__generos">Suspense</span>
+                    <span class="hero__content__generos">•</span>
+                    <span class="hero__content__generos">Crime</span>
+                </div>
+                <ul class="hero__content__watch">
+                    <li>
+                        <button class="assistir"><img class="ab" src="./dist/images/play.svg" alt="play"> Assistir</button>
+                    </li>
+                    <li>
+                        <button class="adcionar"><img src="./dist/images/plus.svg" alt="plus"></button>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <section class="shows">
+        <h3 class="shows__margin text--big">Assista também</h3>
+        <ul class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/esquadrao_suicida.jpg" alt="Esquadrão Suicida">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/o_esquadrao_suicida.jpg" alt="O Esquadrão Suicida">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/aves_de_rapina.jpg" alt="Aves de Rapina">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/aquaman.jpg" alt="Aquaman">
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="lenguage-selector">
+                        <img src="./dist/images/globe.svg" alt="globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2023 ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel repellendus expedita accusamus id excepturi consequuntur saepe, nobis modi.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>

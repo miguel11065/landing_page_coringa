@@ -1,0 +1,92 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5vw;
+    max-height: 100vh;
+    background-image: url(../images/Coringa-Banner3.png);
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/Coringa-Banner4.png);
+        max-height: 32vh;
+    }
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            margin-bottom: 20px;
+
+            img {
+                max-width: 50vh;
+
+                @media (max-width: 768px) {
+                    max-width: 30vh;
+                    margin-top: 5vh;
+                    margin-bottom: 3vh;
+                }
+            }
+        }
+
+        &__badges {
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            
+            img {
+                max-width: 25px;
+
+                
+            }
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+        }
+    
+        &__generos {
+            margin-right: 10px;
+            
+            @media (max-width: 768px) {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &__watch {
+            list-style: none;
+            display: flex;
+            margin-top: 20px;
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+            
+            .assistir {
+                width: 150px;
+                height: 50px;
+                font-size: 18px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                margin-right: 20px;
+                background-color: variaveis.$corTextoPrincipal;
+                cursor: pointer;
+
+                .ab {
+                    margin: 0;
+                }
+            }
+
+            .adcionar {
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}
